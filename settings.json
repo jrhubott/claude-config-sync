@@ -11,5 +11,6 @@
     "command": "~/.claude/statusline.sh"
   },
   "alwaysThinkingEnabled": true,
-  "skipDangerousModePermissionPrompt": true
+  "skipDangerousModePermissionPrompt": true,
+  "model": "opusplan"
 }
