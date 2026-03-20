@@ -6,11 +6,14 @@
     ],
     "deny": []
   },
+  "model": "opusplan",
   "statusLine": {
     "type": "command",
     "command": "~/.claude/statusline.sh"
   },
   "alwaysThinkingEnabled": true,
   "skipDangerousModePermissionPrompt": true,
-  "model": "opusplan"
+  "enabledPlugins": {
+    "commit-commands@claude-plugins-official": true
+  }
 }
