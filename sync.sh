@@ -485,6 +485,12 @@ push_changes() {
     git status --short
     echo ""
 
+    if git status --porcelain | grep -q "settings.json"; then
+        echo -e "${BOLD}settings.json diff:${RESET}"
+        git diff settings.json
+        echo ""
+    fi
+
     read -p "Commit message (or Ctrl+C to cancel): " msg
     git add -A
     git commit -m "$msg"
